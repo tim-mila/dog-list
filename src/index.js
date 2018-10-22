@@ -76,7 +76,7 @@ class DogBreeds extends React.Component {
     }
 
     query(q) {
-        axios.get('http://192.168.1.41:8080/dogs?q=' + q, {
+        axios.get(process.env.REACT_APP_API_URL + '/dogs?q=' + q, {
             crossdomain: true,
         })
         .then(response => this.setState({'breeds': response.data}));
