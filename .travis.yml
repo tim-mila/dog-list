@@ -6,7 +6,7 @@ install: true
 before_script:
   - npm install
 
-script: npm run build-production
+script: npm run build
 
 cache:
   directories:
