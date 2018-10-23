@@ -29,7 +29,6 @@ class Search extends React.Component {
 
 class BreedList extends React.Component {
     render() {
-        console.log(this.props.data);
         let list = this.props.data.map(function(d) {
             return <BreedCard data={d}/>
         });
@@ -70,8 +69,6 @@ class DogBreeds extends React.Component {
     }
 
     handleChange = (value) => {
-        console.log("DogBreeds::handleChange", value);
-        // this.setState({ query: value })
         this.query(value);
     }
 
